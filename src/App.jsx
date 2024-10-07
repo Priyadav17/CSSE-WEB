@@ -2,10 +2,13 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import './Css/locomotive-scroll.css';
 import Hero from './Hero/Hero';
-import CssePage from './Pages/Societypages/CssePage';
-import SocietyShowCard from './Society/SocietyShow';
-// import InfoForm from './InfoForm/InfoForm';
+
+
 import MembersPages from './components/MembersPages';
+import Event from './components/Events/Event';
+
+import Team from './components/Developer/Team';
+
 
 function App() {
   return (
@@ -13,10 +16,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Hero />} />
         
-        <Route path='/csse' element={<CssePage />} />
-        <Route path='/showSo' element={<SocietyShowCard/>}/>
-        {/* <Route path='/infoform' element={<InfoForm/>}/> */}
         <Route path='/members' element={<MembersPages />} />
+       <Route path='/events' element = {<Event/>} />
+        <Route path = '/devTeam' element = {<Team/>} />
       </Routes>
     </Router>
   );

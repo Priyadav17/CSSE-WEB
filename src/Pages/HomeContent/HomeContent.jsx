@@ -1,86 +1,186 @@
 import React from "react";
-import './HomeContent.css';
-
+import edTech from '../../assets/edTech.png'
+import Mission from '../../assets/Mission.png'
+import join from '../../assets/join.jpg'
+import impact from '../../assets/impact.jpg'
+import FaqComponent from "../FAQ/Faqs";
+import LOGOCSSE from '../../assets/LOGOCSSE.png'
+import styles from './HomeContent.module.css';
+import Gallery from "../triCard/triCard";
+import ReactPlayer from 'react-player'
 const Section = () => {
   return (
-    <div className="container">
-      <section className="col2 ss-style-triangles overflow-hidden">
-        <div className="column text">
-          <h2>TITLE</h2>
-          <p>About the society or discription</p>
+    <div className={styles.container}>
+      <svg
+  id="curveupcolor"
+  xmlns="http://www.w3.org/2000/svg"
+  version="1.1"
+  width="100%"
+  height="100"
+  viewBox="0 0 100 100"
+  preserveAspectRatio="none"
+>
+  <path d="M0 100 C 20 0 50 0 100 100 Z" />
+</svg>
+
+<section className="col2 color ss-style-curvedown overflow-hidden flex flex-col-reverse md:flex-row items-center justify-between p-8 bg-black">
+<div className="w-full md:w-1/2 flex justify-center md:justify-end mb-6 md:mb-0">
+    <div className="logo-div relative overflow-hidden hover:scale-110 transition-transform duration-300 ease-in-out mr-0 md:mr-60">
+      <img
+        src={LOGOCSSE}
+        alt="society logo"
+        className="w-60 h-70 md:w-70 md:h-70 object-cover"
+      />
+    </div>
+</div>
+  
+  <div className="w-full md:w-1/2 mb-6 md:mb-0 text-white mr-20">
+    <h2 className="text-3xl font-bold mb-4 underline">About CSSE</h2>
+    <p className="text-lg ml-10 text-left">
+    ▪ Founded in the year 2013, by Alumni Respected Ankit Porwal and Vivek Samele.<br/>
+    ▪ The basic OBJECTIVES of the society are:<br/>
+    ▪ to develop the managerial and soft skills of the students<br/>
+    ▪ to organize activities for social awareness and social benefits.<br/>
+    ▪ To increase mutual bonding among each other.<br/>
+    </p>
+  </div>
+
+</section>
+
+<svg
+  id="curvedowncolor"
+  xmlns="http://www.w3.org/2000/svg"
+  version="1.1"
+  width="100%"
+  height="100"
+  viewBox="0 0 100 100"
+  preserveAspectRatio="none"
+>
+  <path d="M0 0 C 50 100 80 100 100 0 Z" />
+</svg>
+
+<svg
+  id="curveupcolor"
+  xmlns="http://www.w3.org/2000/svg"
+  version="1.1"
+  width="100%"
+  height="100"
+  viewBox="0 0 100 100"
+  preserveAspectRatio="none"
+>
+  <path d="M0 100 C 20 0 50 0 100 100 Z" />
+</svg>
+
+<section className="col2 color ss-style-curvedown overflow-hidden flex flex-col-reverse md:flex-row items-center justify-between p-8 bg-black">
+  <div className="md:w-1/2 w-full p-4">
+    <h2 className="text-2xl font-bold mb-4">Our Vision</h2>
+    <p className="text-lg ml-10 text-left">
+      Our vision is to empower individuals and organizations by providing high-quality services that foster growth, innovation, and sustainability. We aim to be leaders in our field, setting benchmarks in excellence and contributing positively to society.
+    </p>
+  </div>
+  <div className="md:w-1/2 w-full p-4 ml-auto hover:scale-105 transition-transform duration-300 ease-in-out flex justify-end">
+  <img 
+    src={edTech} 
+    alt="Vision" 
+    className="w-80 h-auto object-cover rounded-full shadow-lg"
+  />
+</div>
+
+</section>
+
+<svg
+  id="curvedowncolor"
+  xmlns="http://www.w3.org/2000/svg"
+  version="1.1"
+  width="100%"
+  height="100"
+  viewBox="0 0 100 100"
+  preserveAspectRatio="none"
+>
+  <path d="M0 0 C 50 100 80 100 100 0 Z" />
+</svg>
+
+<svg id="curveupcolor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M0 100 C 20 0 50 0 100 100 Z" />
+      </svg>
+     
+      <section className="color overflow-hidden flex flex-col md:flex-row items-center justify-between bg-black">
+        <div className="flex justify-center md:w-1/2 w-full p-4  hover:scale-105 transition-transform duration-300 ease-in-out">
+          <img 
+            src={join} 
+            alt="Vision" 
+            className="w-60 h-auto object-cover rounded-full shadow-lg"
+          />
         </div>
-      </section>
+        <div className="md:w-1/2 w-full p-4">
+          <h2 className="text-2xl font-bold mb-4">Why join CSSE ?</h2>
+          <p className="text-lg text-left">
+          ▪ Joining CSSE offers students a chance to develop essential life skills such as leadership, communication, and teamwork.<br/>
+          ▪ The society conducts various formal and informal events, including personality development programs, workshops, seminars, and language classes.<br/>
+          ▪ By learning from seniors and participating in these activities, students enhance their professional and personal growth.
 
-      <section className="color overflow-hidden">
-        <p>Vision</p>
-      </section>
-
-      <section className="col3 ss-style-double-diagonal">
-        <div className="column">
-        <p>Videos & Gallery</p>
+          </p>
         </div>
+  
       </section>
 
-      <section className="col2 ss-style-half-circle overflow-hidden">
-        <div className="column text">
-          <p>Videos & Gallery</p>
+      <svg
+        id="curvedowncolor"
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        width="100%"
+        height="100"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+      >
+        <path d="M0 0 C 50 100 80 100 100 0 Z" />
+      </svg>
+      <svg
+        id="curveupcolor"
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        width="100%"
+        height="100"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+      >
+        <path d="M0 100 C 20 0 50 0 100 100 Z" />
+      </svg>
+      <section className="color overflow-hidden flex flex-col md:flex-row items-center justify-between bg-black">
+        
+        <div className="md:w-1/2 w-full p-4">
+          <h2 className="text-2xl font-bold mb-4">Community Impact</h2>
+          <p className="text-lg text-left">
+          ▪ CSSE plays a vital role in fostering community awareness and social responsibility.<br/>
+          ▪ The society organizes activities that not only benefit students but also contribute to the broader social good.<br/>
+          ▪ Through events that encourage mutual cooperation and bonding, the society builds a strong, supportive network among students, creating a lasting impact on both the individual and community levels.<br/>
+          </p>
         </div>
+        <div className="flex justify-center md:w-1/2 w-full p-4  hover:scale-105 transition-transform duration-300 ease-in-out">
+          <img 
+            src={impact} 
+            alt="Vision"
+            className="w-60 h-auto object-cover rounded-full shadow-lg"
+          />
+        </div>
+  
       </section>
 
-      <section className="color ss-style-bigtriangle overflow-hidden">
-        <p>Frequently Asked Questions</p>
+      <section className={`${styles.col3} ${styles.ssStyleDoubleDiagonal} pt-3 pb-5`}>
+     
+      </section>
+
+      <section className={`${styles.col3} ${styles.ssStyleDoubleDiagonal} pt-3 pb-5`}>
+        <Gallery/>
+      </section>
+
+      <section className={`${styles.color} ${styles.ssStyleBigtriangle} overflow-hidden`}>
+        <FaqComponent/>
       </section>
 
       <svg id="bigtrianglecolor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
         <path d="M0 0 L50 100 L100 0 Z" />
       </svg>
-
-      <svg id="curveupcolor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <path d="M0 100 C 20 0 50 0 100 100 Z" />
-      </svg>
-
-      <section className="col2 color ss-style-curvedown overflow-hidden">
-        <div className="column text">
-          <p>Something More</p>
-        </div>
-      </section>
-
-      <svg id="curvedowncolor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <path d="M0 0 C 50 100 80 100 100 0 Z" />
-      </svg>
-
-      <section className="col2 overflow-hidden">
-        <p>Curve Up</p>
-      </section>
-
-      <section className="col2 color ss-style-multi-triangles overflow-hidden">
-        <div className="column text">
-          <p>Big Section</p>
-        </div>
-      </section>
-
-      <section className="col2 color ss-style-rounded-split">
-        <div className="column text">
-          <p>Big Section</p>
-        </div>
-      </section>
-
-      <section className="col3 ss-style-inverted-rounded">
-        <div className="column">
-          <p>Inverted Round</p>
-        </div>
-      </section>
-
-      <svg id="bigtriangleshadow" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <path id="trianglePath1" d="M0 0 L50 100 L100 0 Z" />
-        <path id="trianglePath2" d="M50 100 L100 40 L100 0 Z" />
-      </svg>
-
-      <section className="color col3 ss-style-inczigzag">
-        <div className="column">
-          <p>Ending</p>
-        </div>
-      </section>
     </div>
   );
 };
